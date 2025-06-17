@@ -1,1 +1,11 @@
-<manifest package="yukams.app.background_locator_2"></manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <service
+            android:name="yukams.app.background_locator_2.IsolateHolderService"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+    </application>
+
+</manifest>
